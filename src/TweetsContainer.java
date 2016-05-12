@@ -1,6 +1,6 @@
-package ru.mail.sphere.twitteraccessor.container;
+package ???.container;
 
-import ru.mail.sphere.twitteraccessor.Tweet;
+import ???.Tweet;
 
 import java.io.Serializable;
 import java.util.Collection;
