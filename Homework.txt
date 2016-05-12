@@ -21,6 +21,7 @@
 Необходимо реализовать интерфейс TweetsContainer (/src/TweetsContainer.java)
 Объект класса, реализующего данный интерфейс, должен предоставлять некоторые функции обработки и хранения выборки твитов.
 Для каждого метода реализующего класса должен быть создан unit test.
+При разработке любого public метода важно прдполагать, что на вход могут быть поданы некорректные данные. 
 
 
 Данные.
@@ -54,5 +55,5 @@ Twitter4j доступна для использования через Maven:
             .setOAuthConsumerSecret(your_OAuthConsumerSecret)
             .setOAuthAccessToken(your_OAuthAccessToken)
             .setOAuthAccessTokenSecret(your_OAuthAccessTokenSecret); 
-    Для получения СonsumerKey, ConsumerSecret, AccessToken и TokenSecret необходимо создать приложение на https://apps.twitter.com
-    и далее сгенерировать их в сеттингах.
+    	Для получения СonsumerKey, ConsumerSecret, AccessToken и TokenSecret необходимо создать приложение на https://apps.twitter.com и далее сгенерировать их в сеттингах.
+    
