@@ -9,7 +9,7 @@
 Будем считать, что говорящие на языке L пользователи болеют за команду из первой выборки, если в ней больше твитов на языке L, чем во второй.
 Необходимо проанализировать предпочтения болельщиков всех языков, на которых были найдены твиты.
 
-Полученные данные должны быть визуализированы (любым средством). Результат в формате jpeg должен быть приложен к проекту.
+Полученные данные должны быть визуализированы (любым средством). Результат в формате pdf должен быть приложен к проекту.
 
 Твит.
 Необходимо реализовать класс Tweet, которым будет параметризован контейнер твитов.
@@ -48,8 +48,8 @@ Twitter4j доступна для использования через Maven:
 Важно учесть:
 	Twitter API имеет некоторые ограничения на querySize запроса и количество запросов в отрезок времени
 	Для пользования Twitter API понадобится oAuth аутентификация внутри приложения:
-		import twitter4j.conf.ConfigurationBuilder;
-		ConfigurationBuilder cb = new ConfigurationBuilder();
+	import twitter4j.conf.ConfigurationBuilder;
+	ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
             .setOAuthConsumerKey(your_OAuthConsumerKey)
             .setOAuthConsumerSecret(your_OAuthConsumerSecret)
@@ -57,3 +57,20 @@ Twitter4j доступна для использования через Maven:
             .setOAuthAccessTokenSecret(your_OAuthAccessTokenSecret); 
     	Для получения СonsumerKey, ConsumerSecret, AccessToken и TokenSecret необходимо создать приложение на https://apps.twitter.com и далее сгенерировать их в сеттингах.
     
+Формат сдачи:
+Отправьте сслыку на ваш публичный github репозиторий на адрес s.rybalkin@corp.mail.ru
+В репозитории должен содержаться проект, собираемый maven.
+Для проверки важны только исходиники, в том числе pom.xml
+Для того, чтобы в папку с проектом не попало ничего лишнего, воспользуйтесь файлом src/.gitignore
+( О том, что такое `проект, собираемый maven` можно прочитать http://www.apache-maven.ru/index.html
+и, если вы используете Intellij Idea -  https://www.jetbrains.com/help/idea/2016.1/getting-started-with-maven.html?origin=old_help )
+Также в репозитории должны находиться визуализированные чиловые данные анализа предпочтения болельщиков. (pdf)
+
+Сроки сдачи:
+23/05/2016 23:59
+
+Штрафы:
+-20% от получаемых баллов за каждый день после срока сдачи. Например, при сдаче 25/05 оценка будет умножена на 0.6
+
+Методы проверки:
+Автоматизированное тестирование
