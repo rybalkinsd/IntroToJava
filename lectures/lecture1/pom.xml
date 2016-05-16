@@ -10,6 +10,8 @@
 
     <properties>
         <junit.version>4.12</junit.version>
+        <apache.maven.compiler.version>3.5.1</apache.maven.compiler.version>
+        <target.java.version>1.8</target.java.version>
     </properties>
 
     <dependencies>
@@ -20,5 +22,19 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${apache.maven.compiler.version}</version>
+                <configuration>
+                    <source>${target.java.version}</source>
+                    <target>${target.java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
