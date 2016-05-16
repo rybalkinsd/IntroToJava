@@ -1,9 +1,6 @@
 package ru.mail.sphere.Stack;
 
-import ru.mail.sphere.Stack.Stack;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
 

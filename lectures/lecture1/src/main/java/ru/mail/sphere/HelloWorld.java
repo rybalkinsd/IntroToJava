@@ -1,9 +1,5 @@
 package ru.mail.sphere;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class HelloWorld {
 
